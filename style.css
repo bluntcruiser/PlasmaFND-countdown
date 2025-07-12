@@ -57,34 +57,35 @@ body {
   padding: 5px 8px;
 }
 
-.menu-item:hover {
+.menu-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-link:hover {
   color: #009393;
 }
 
 .tooltip {
-    visibility: hidden;
-    width: 400px; 
-    background: #1a1a2e;
-    color: #e0e0e0;
-    text-align: left;
-    border-radius: 6px;
-    padding: 15px 20px;
-    position: absolute;
-    z-index: 1;
-    top: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border: 1px solid #333;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    white-space: normal;
-    word-wrap: break-word;
-    height: auto; 
-    max-height: none; 
-    overflow: visible; 
+  visibility: hidden;
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  color: #e0e0e0;
+  padding: 18px 24px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  min-width: 400px;
+  max-width: 650px;
+  white-space: normal;
+  word-wrap: break-word;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .menu-item:hover .tooltip {
@@ -128,6 +129,18 @@ body {
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #888;
+}
+
+.token-name {
+  color: #009393;
+  font-weight: bold;
 }
 
 #countdown {
@@ -185,7 +198,10 @@ body {
     font-size: 0.85rem;
   }
   .tooltip {
+    min-width: 280px;
     max-width: 90vw;
+    font-size: 0.95rem;
+    padding: 14px 18px;
   }
   h2 {
     font-size: 1rem;
