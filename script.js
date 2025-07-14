@@ -1,4 +1,4 @@
-const countDownDate = new Date("July 17, 2025 00:00:00").getTime();
+const countDownDate = new Date("July 17, 2025 17:00:00").getTime();
 
 const elements = {
   days: {el: document.getElementById('days')},
